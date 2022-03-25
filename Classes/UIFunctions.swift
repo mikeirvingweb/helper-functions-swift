@@ -67,4 +67,11 @@ class UIFunctions
         label.layer.shadowOffset = CGSize.zero
         label.layer.shadowRadius = 1
     }
+	
+	/* Run Some Code on the Main UI Thread */
+    class func RunOnMainUIThread() {
+        DispatchQueue.main.async {
+		// run some code on the main thread
+	}
+    }
 }
